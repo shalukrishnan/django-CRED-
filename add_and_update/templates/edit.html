@@ -1,0 +1,13 @@
+{% comment %} <form method = "post" enctype = "multipart/from-data">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input type = "submit" value = "update">
+
+</from>     {% endcomment %}
+
+<form method="post" enctype="multipart/form-data">  <!-- Correct the typo here -->
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Update">  <!-- Ensure form tag is closed properly -->
+</form>

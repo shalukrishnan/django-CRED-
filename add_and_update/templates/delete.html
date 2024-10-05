@@ -1,0 +1,9 @@
+<form method="post">  <!-- Correct the method attribute -->
+    {% csrf_token %}
+    Are you sure you want to delete "{{ object.name }}"?
+    <input type="submit" value="Delete">
+    <a href="/">Cancel</a>  <!-- Optional: Add a cancel link -->
+</form>
+
+
+
